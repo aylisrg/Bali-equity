@@ -24,11 +24,12 @@ export type AnalyticsEvent =
   | {
       name: "lead_submitted";
       props: {
-        source: "quiz_result" | "hero" | "lead_magnet" | "other";
+        source: "quiz_result" | "hero" | "lead_magnet" | "land_detail" | "other";
         channel: "whatsapp";
         goal?: string | null;
         horizon?: string | null;
         budget?: string | null;
+        plot?: string;
       };
     }
   | {
@@ -38,7 +39,20 @@ export type AnalyticsEvent =
   | {
       name: "lead_magnet_requested";
       props: { report: string };
-    };
+    }
+  | {
+      name: "land_filter_applied";
+      props: {
+        filter: "price" | "size" | "region" | "zoning" | "tenure" | "sort";
+        value: string;
+      };
+    }
+  | {
+      name: "land_card_clicked";
+      props: { slug: string; surface: "catalog" | "teaser" | "similar" };
+    }
+  | { name: "land_pin_clicked"; props: { slug: string } }
+  | { name: "map_view_toggled"; props: { view: "map" | "list" } };
 
 export function track(event: AnalyticsEvent) {
   if (typeof window === "undefined") return;

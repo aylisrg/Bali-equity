@@ -6,10 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cms:update": "cp node_modules/@sveltia/cms/dist/sveltia-cms.js public/admin/sveltia-cms.js"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
+    "@vis.gl/react-google-maps": "^1.9.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.15.0",
     "lucide-react": "^0.460.0",
@@ -20,6 +22,7 @@
     "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {
+    "@sveltia/cms": "^0.172.1",
     "@tailwindcss/postcss": "^4.0.0",
     "@types/node": "^22.10.0",
     "@types/react": "^19.0.0",

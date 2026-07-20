@@ -1,0 +1,29 @@
+{
+  "title": "Jungle Valley Land Near Tegallalang",
+  "region": "ubud",
+  "area": "Tegallalang, Ubud",
+  "coordinates": { "lat": -8.434, "lng": 115.279 },
+  "areSize": 15,
+  "priceUSD": 120000,
+  "tenure": { "type": "leasehold", "leaseYears": 30, "extensionOption": true },
+  "zoning": "agricultural",
+  "status": "available",
+  "images": [
+    "/images/land/rice-terrace.webp",
+    "/images/land/palm-river.webp",
+    "/images/land/temple-lake.webp"
+  ],
+  "highlights": ["Jungle valley and river below", "10 min to Tegallalang terraces", "30-year lease + 20-year option"],
+  "distances": {
+    "beach": "70 min to the nearest coast",
+    "airport": "70 min to DPS Airport",
+    "landmark": "10 min to Tegallalang Rice Terraces"
+  },
+  "roadAccess": "3 m concrete road",
+  "utilities": { "electricity": true, "water": true },
+  "certificate": "Notarised lease over SHM title",
+  "description": "Fifteen ares dropping gently toward a jungle river valley north of Ubud, minutes from the Tegallalang terraces. The land is currently zoned agricultural: development requires the aspect-and-setback pathway used for eco-retreats in this area, which our legal team scopes as part of due diligence. Priced accordingly — this is the trade-off that makes the entry price a fraction of tourism-zoned Ubud land.",
+  "investmentNote": "Wellness and retreat operators actively seek exactly this profile: river, jungle, seclusion, Tegallalang proximity. Structured correctly, a retreat concept here targets premium nightly rates against one of the lowest land bases in the catalog. Zoning pathway must be confirmed before commitment — we walk you through it.",
+  "publishedAt": "2026-05-02",
+  "featured": false
+}

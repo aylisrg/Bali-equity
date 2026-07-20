@@ -1,0 +1,25 @@
+{
+  "title": "Freehold Hilltop Land in Pecatu",
+  "region": "uluwatu-bukit",
+  "area": "Pecatu, Uluwatu",
+  "coordinates": { "lat": -8.83, "lng": 115.107 },
+  "areSize": 12,
+  "priceUSD": 192000,
+  "tenure": { "type": "freehold" },
+  "zoning": "tourism",
+  "status": "available",
+  "images": ["/images/land/beach-palm.webp", "/images/land/cliff-beach.webp"],
+  "highlights": ["Freehold SHM certificate", "Elevated with ocean glimpse", "6 m road frontage"],
+  "distances": {
+    "beach": "8 min drive to Dreamland Beach",
+    "airport": "30 min to DPS Airport",
+    "landmark": "12 min to Uluwatu temple"
+  },
+  "roadAccess": "6 m paved road",
+  "utilities": { "electricity": true, "water": true },
+  "certificate": "SHM (freehold title)",
+  "description": "Twelve ares of elevated freehold land on the Pecatu plateau with a glimpse of the Indian Ocean from ground level and open views from a second storey. Wide 6-metre road frontage makes construction logistics straightforward. Tourism zoning confirmed; PDAM water and three-phase electricity available at the road.",
+  "investmentNote": "The Bukit is transitioning from raw land to a mature resort district — Pecatu freehold at this price per are is a hold-and-develop play. Suitable for a multi-villa estate or a branded-residence partnership, with freehold title giving maximum exit flexibility.",
+  "publishedAt": "2026-06-05",
+  "featured": true
+}

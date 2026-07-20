@@ -1,0 +1,35 @@
+{
+  "title": "Ricefield View Land in Seseh Village",
+  "region": "seseh-cemagi",
+  "area": "Seseh, Cemagi",
+  "coordinates": { "lat": -8.641, "lng": 115.103 },
+  "boundary": [
+    { "lat": -8.6405, "lng": 115.1025 },
+    { "lat": -8.6405, "lng": 115.1035 },
+    { "lat": -8.6415, "lng": 115.1035 },
+    { "lat": -8.6415, "lng": 115.1025 }
+  ],
+  "areSize": 10,
+  "priceUSD": 150000,
+  "tenure": { "type": "leasehold", "leaseYears": 30, "extensionOption": true },
+  "zoning": "tourism",
+  "status": "available",
+  "images": [
+    "/images/land/ricefield-aerial.webp",
+    "/images/land/rice-valley.webp",
+    "/images/land/tanah-lot.webp"
+  ],
+  "highlights": ["Unobstructed ricefield view", "5 min to Seseh Beach", "30-year lease + extension"],
+  "distances": {
+    "beach": "5 min drive to Seseh Beach",
+    "airport": "50 min to DPS Airport",
+    "landmark": "10 min to Tanah Lot temple"
+  },
+  "roadAccess": "3 m village road, widening planned",
+  "utilities": { "electricity": true, "water": true },
+  "certificate": "Notarised lease over SHM title",
+  "description": "Ten ares of gently sloping land overlooking protected ricefields on the edge of Seseh village — the next stretch of coast after Canggu and Pererenan, where land values have grown fastest on the island. The plot faces west over the paddies, giving permanent sunset views that cannot be built out. Tourism zoning is confirmed against the current spatial plan.",
+  "investmentNote": "Seseh-Cemagi is where experienced Bali developers are land-banking now: infrastructure is following from Pererenan, while entry prices remain roughly half of Berawa. A boutique villa or two-unit project here rides the corridor's growth over the lease term.",
+  "publishedAt": "2026-07-02",
+  "featured": true
+}

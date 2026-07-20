@@ -1,0 +1,25 @@
+{
+  "title": "Sea View Land Above Amed Bay",
+  "region": "east-bali",
+  "area": "Amed, Karangasem",
+  "coordinates": { "lat": -8.337, "lng": 115.665 },
+  "areSize": 20,
+  "priceUSD": 130000,
+  "tenure": { "type": "freehold" },
+  "zoning": "tourism",
+  "status": "sold",
+  "images": ["/images/land/temple-gates.webp", "/images/land/beach-palm.webp"],
+  "highlights": ["Full sea view over Amed Bay", "Freehold SHM certificate", "Mount Agung backdrop"],
+  "distances": {
+    "beach": "5 min drive to Amed Beach",
+    "airport": "2 h to DPS Airport",
+    "landmark": "20 min to Lempuyang temple"
+  },
+  "roadAccess": "4 m paved road",
+  "utilities": { "electricity": true, "water": true },
+  "certificate": "SHM (freehold title)",
+  "description": "Twenty ares of terraced hillside above Amed Bay with an uninterrupted sea view and Mount Agung rising behind. Amed is East Bali's diving and freediving hub, with a fast-growing boutique resort scene and a fraction of the south's land costs. Sold to a client for a 6-villa eco-resort development.",
+  "investmentNote": "Closed at $6,500 per are — a level that no longer exists on the Amed hillside. Ask us about comparable early-stage coastal positions in East Bali.",
+  "publishedAt": "2026-03-10",
+  "featured": false
+}
