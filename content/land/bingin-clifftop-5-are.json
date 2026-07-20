@@ -1,0 +1,25 @@
+{
+  "title": "Clifftop Plot Above Bingin Beach",
+  "region": "uluwatu-bukit",
+  "area": "Bingin, Pecatu",
+  "coordinates": { "lat": -8.805, "lng": 115.112 },
+  "areSize": 5,
+  "priceUSD": 140000,
+  "tenure": { "type": "leasehold", "leaseYears": 25, "extensionOption": false },
+  "zoning": "tourism",
+  "status": "reserved",
+  "images": ["/images/land/cliff-beach.webp", "/images/land/surf-beach.webp"],
+  "highlights": ["200 m walk to Bingin Beach", "Ocean view potential", "World-class surf at the doorstep"],
+  "distances": {
+    "beach": "200 m walk to Bingin Beach",
+    "airport": "35 min to DPS Airport",
+    "landmark": "10 min to Uluwatu temple"
+  },
+  "roadAccess": "2.5 m concrete lane",
+  "utilities": { "electricity": true, "water": false },
+  "certificate": "Notarised lease over SHM title",
+  "description": "A compact clifftop plot a two-minute walk from the famous Bingin surf break. Elevated position with ocean view potential from a second storey. The Bukit's tourism zoning permits short-term rental villas, and Bingin's guesthouse economy delivers some of the highest per-square-metre revenues on the island. Water is via delivered tank or shared well; electricity is at the lane.",
+  "investmentNote": "Small plots by Bingin punch far above their size: surf-driven demand keeps nightly rates high year-round with minimal seasonality. A 2-3 key guesthouse here is a proven high-yield format.",
+  "publishedAt": "2026-04-15",
+  "featured": false
+}

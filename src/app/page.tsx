@@ -5,11 +5,14 @@ import { TrackRecordSection } from "@/components/sections/TrackRecordSection";
 import { ExpertiseSection } from "@/components/sections/ExpertiseSection";
 import { LeadMagnetSection } from "@/components/sections/LeadMagnetSection";
 import { StrategicPicksSection } from "@/components/sections/StrategicPicksSection";
+import { LandTeaserSection } from "@/components/sections/LandTeaserSection";
 import { LegalSecuritySection } from "@/components/sections/LegalSecuritySection";
 import { ManagementSection } from "@/components/sections/ManagementSection";
 import { FooterSection } from "@/components/sections/FooterSection";
+import { getFeaturedPlots } from "@/lib/land";
 
 export default function Home() {
+  const featuredPlots = getFeaturedPlots();
   return (
     <main className="overflow-hidden">
       <HeroSection />
@@ -19,6 +22,7 @@ export default function Home() {
       <ExpertiseSection />
       <LeadMagnetSection />
       <StrategicPicksSection />
+      <LandTeaserSection plots={featuredPlots} />
       <LegalSecuritySection />
       <ManagementSection />
       <FooterSection />

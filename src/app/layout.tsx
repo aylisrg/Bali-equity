@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { PostHogProvider } from "@/components/analytics/PostHogProvider";
+import { Header } from "@/components/layout/Header";
+import { SITE_URL } from "@/lib/constants";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "EQUITY BALI — Strategic Real Estate Investment in Bali",
   description:
     "Premium Bali real estate agency. Data-driven investment portfolios, in-house property management, and top-10% market performance. ROI from 12%",
@@ -38,7 +41,10 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <PostHogProvider>{children}</PostHogProvider>
+        <PostHogProvider>
+          <Header />
+          {children}
+        </PostHogProvider>
         <Analytics />
       </body>
     </html>

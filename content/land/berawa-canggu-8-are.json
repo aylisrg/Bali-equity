@@ -1,0 +1,25 @@
+{
+  "title": "Prime Berawa Plot Near Finns Beach Club",
+  "region": "canggu-berawa",
+  "area": "Berawa, Canggu",
+  "coordinates": { "lat": -8.6625, "lng": 115.1445 },
+  "areSize": 8,
+  "priceUSD": 304000,
+  "tenure": { "type": "leasehold", "leaseYears": 27, "extensionOption": true },
+  "zoning": "tourism",
+  "status": "available",
+  "images": ["/images/land/surf-beach.webp", "/images/land/beach-palm.webp"],
+  "highlights": ["300 m to Finns Beach Club", "4 m paved road access", "Flat, ready to build"],
+  "distances": {
+    "beach": "300 m to Berawa Beach",
+    "airport": "45 min to DPS Airport",
+    "landmark": "300 m to Finns Beach Club"
+  },
+  "roadAccess": "4 m paved road",
+  "utilities": { "electricity": true, "water": true },
+  "certificate": "Notarised lease over SHM title",
+  "description": "A rare flat plot in the heart of Berawa, one of Canggu's strongest short-term rental micro-markets. The land sits 300 metres from Finns Beach Club on a quiet 4-metre paved lane, surrounded by operating villas with proven occupancy. Tourism zoning allows villa development with short-term rental licensing. Electricity is at the road and a deep well or PDAM connection is available.",
+  "investmentNote": "Berawa land trades at a premium for a reason: walkable beach access and year-round demand. An efficient 3-4 bedroom villa build here targets a 12-15% net yield on total project cost, with strong exit liquidity to both investors and end users.",
+  "publishedAt": "2026-06-18",
+  "featured": false
+}

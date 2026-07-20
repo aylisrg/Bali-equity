@@ -7,6 +7,8 @@ interface ButtonProps {
   variant?: ButtonVariant;
   size?: "sm" | "md" | "lg";
   href?: string;
+  /** Open href in a new tab. Defaults to true for absolute http(s) URLs. */
+  external?: boolean;
   onClick?: () => void;
   children: React.ReactNode;
   className?: string;
@@ -35,6 +37,7 @@ export function Button({
   variant = "primary",
   size = "md",
   href,
+  external,
   onClick,
   children,
   className,
@@ -50,11 +53,11 @@ export function Button({
   );
 
   if (href) {
+    const opensNewTab = external ?? href.startsWith("http");
     return (
       <a
         href={href}
-        target="_blank"
-        rel="noopener noreferrer"
+        {...(opensNewTab ? { target: "_blank", rel: "noopener noreferrer" } : {})}
         className={classes}
         onClick={onClick}
       >

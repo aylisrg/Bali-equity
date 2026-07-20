@@ -1,0 +1,25 @@
+{
+  "title": "Freehold River Boundary Land in Cemagi",
+  "region": "seseh-cemagi",
+  "area": "Cemagi, Mengwi",
+  "coordinates": { "lat": -8.628, "lng": 115.093 },
+  "areSize": 25,
+  "priceUSD": 487500,
+  "tenure": { "type": "freehold" },
+  "zoning": "residential",
+  "status": "available",
+  "images": ["/images/land/tanah-lot.webp", "/images/land/palm-river.webp"],
+  "highlights": ["Freehold SHM certificate", "Subdividable into 4-5 plots", "Natural river boundary"],
+  "distances": {
+    "beach": "7 min drive to Cemagi Beach",
+    "airport": "50 min to DPS Airport",
+    "landmark": "8 min to Tanah Lot temple"
+  },
+  "roadAccess": "5 m paved road",
+  "utilities": { "electricity": true, "water": true },
+  "certificate": "SHM (freehold title)",
+  "description": "A substantial 25-are freehold holding with a natural river boundary on its western edge, minutes from Tanah Lot. Residential zoning supports villa or family-compound development, and the shape of the plot allows a clean subdivision into four to five individual titles. Full SHM certificate held by a single owner, with clean history verified at BPN.",
+  "investmentNote": "Freehold at this scale near the Cemagi coast is increasingly scarce. The subdivision play — buy whole, split, resell serviced plots — has consistently returned 30-50% over 2-3 year horizons in this corridor, or hold the river section for a flagship villa.",
+  "publishedAt": "2026-05-21",
+  "featured": false
+}

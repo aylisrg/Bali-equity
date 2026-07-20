@@ -1,3 +1,5 @@
+export const SITE_URL = "https://equity-bali.com";
+
 export const WHATSAPP_NUMBER = "6281325815600";
 
 export const INSTAGRAM_URL =
@@ -14,6 +16,7 @@ export const SECTION_IDS = {
   expertise: "expertise",
   leadMagnet: "lead-magnet",
   strategicPicks: "strategic-picks",
+  land: "land-teaser",
   legal: "legal",
   management: "management",
   footer: "footer",
