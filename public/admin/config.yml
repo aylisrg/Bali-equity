@@ -1,0 +1,170 @@
+backend:
+  name: github
+  repo: aylisrg/Bali-Equity
+  branch: main
+
+media_folder: public/images/land
+public_folder: /images/land
+
+collections:
+  - name: land
+    label: Land Plots
+    folder: content/land
+    create: true
+    format: json
+    extension: json
+    slug: "{{slug}}"
+    identifier_field: title
+    summary: "{{title}} — {{areSize}} are — ${{priceUSD}}"
+    fields:
+      - name: title
+        label: Title
+        widget: string
+        hint: 'Shown as the listing headline, e.g. "Ricefield View Land in Seseh Village". The URL slug is generated from it.'
+
+      - name: region
+        label: Region
+        widget: select
+        options:
+          - { label: "Canggu / Berawa", value: canggu-berawa }
+          - { label: "Seseh / Cemagi", value: seseh-cemagi }
+          - { label: "Uluwatu / Bukit", value: uluwatu-bukit }
+          - { label: "Ubud", value: ubud }
+          - { label: "East Bali", value: east-bali }
+          - { label: "Nusa Islands", value: nusa-islands }
+
+      - name: area
+        label: Area label
+        widget: string
+        hint: 'Human-readable location, e.g. "Berawa, Canggu"'
+
+      - name: coordinates
+        label: Coordinates
+        widget: object
+        hint: "Right-click the plot in Google Maps and copy the coordinates (first number = lat, second = lng)."
+        fields:
+          - { name: lat, label: Latitude, widget: number, value_type: float }
+          - { name: lng, label: Longitude, widget: number, value_type: float }
+
+      - name: areSize
+        label: Size (ares)
+        widget: number
+        value_type: float
+        min: 0.5
+        hint: "1 are = 100 m²"
+
+      - name: priceUSD
+        label: Total price (USD)
+        widget: number
+        value_type: int
+        hint: "Price per are is calculated automatically on the site."
+
+      - name: tenure
+        label: Ownership
+        widget: object
+        fields:
+          - name: type
+            label: Type
+            widget: select
+            options:
+              - { label: Leasehold, value: leasehold }
+              - { label: Freehold, value: freehold }
+          - name: leaseYears
+            label: Lease years
+            widget: number
+            required: false
+            hint: "Required for leasehold plots."
+          - name: extensionOption
+            label: Extension option
+            widget: boolean
+            required: false
+            default: false
+
+      - name: zoning
+        label: Zoning
+        widget: select
+        options:
+          - { label: "Tourism (pink)", value: tourism }
+          - { label: "Residential (yellow)", value: residential }
+          - { label: "Agricultural (green)", value: agricultural }
+
+      - name: status
+        label: Status
+        widget: select
+        default: available
+        options:
+          - { label: Available, value: available }
+          - { label: Reserved, value: reserved }
+          - { label: Sold, value: sold }
+
+      - name: images
+        label: Photos
+        widget: list
+        hint: "First photo is the cover. Use WebP or JPEG, max 1600 px wide, under 300 KB — images are served as-is without resizing."
+        field: { name: image, label: Image, widget: image }
+
+      - name: highlights
+        label: Highlights
+        widget: list
+        max: 5
+        hint: 'Short selling points, e.g. "300 m to Finns Beach Club". The first three are shown on the card.'
+        field: { name: highlight, label: Highlight, widget: string }
+
+      - name: distances
+        label: Distances
+        widget: object
+        required: false
+        fields:
+          - { name: beach, label: Beach, widget: string, required: false, hint: 'e.g. "5 min drive to Seseh Beach"' }
+          - { name: airport, label: Airport, widget: string, required: false, hint: 'e.g. "45 min to DPS Airport"' }
+          - { name: landmark, label: Landmark, widget: string, required: false, hint: 'e.g. "10 min to Tanah Lot temple"' }
+
+      - name: roadAccess
+        label: Road access
+        widget: string
+        required: false
+        hint: 'e.g. "4 m paved road"'
+
+      - name: utilities
+        label: Utilities
+        widget: object
+        required: false
+        fields:
+          - { name: electricity, label: Electricity at plot, widget: boolean, default: true }
+          - { name: water, label: Water at plot, widget: boolean, default: true }
+
+      - name: certificate
+        label: Certificate
+        widget: string
+        required: false
+        hint: 'e.g. "SHM (freehold title)" or "Notarised lease over SHM title"'
+
+      - name: description
+        label: Description
+        widget: text
+        hint: "2-4 paragraphs. What the land is, what surrounds it, what can be built."
+
+      - name: investmentNote
+        label: Investment angle
+        widget: text
+        required: false
+        hint: "Why this plot makes sense as an investment. Shown in a highlighted block."
+
+      - name: publishedAt
+        label: Published date
+        widget: datetime
+        format: "YYYY-MM-DD"
+        time_format: false
+
+      - name: featured
+        label: Featured
+        widget: boolean
+        required: false
+        default: false
+        hint: "Featured plots appear first and on the homepage."
+
+      - name: draft
+        label: Draft (hidden from site)
+        widget: boolean
+        required: false
+        default: false
