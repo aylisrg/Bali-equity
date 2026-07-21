@@ -7,17 +7,54 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "EQUITY BALI — Strategic Real Estate Investment in Bali",
+  title: {
+    default: "Equity Bali — Where to Buy Real Estate in Bali | Data-Driven Investment",
+    template: "%s | Equity Bali",
+  },
   description:
-    "Premium Bali real estate agency. Data-driven investment portfolios, in-house property management, and top-10% market performance. ROI from 12%",
+    "Equity Bali is a data-driven real estate investment agency in Bali. We help foreign investors buy villas and land with net yield from 12%, in-house management and PT PMA legal structuring. Portfolios built on 37,000+ Airbnb listings.",
+  applicationName: "Equity Bali",
+  authors: [{ name: "Equity Bali" }],
+  creator: "Equity Bali",
+  publisher: "Equity Bali",
+  category: "Real Estate Investment",
+  keywords: [
+    "buy property in Bali",
+    "Bali real estate investment",
+    "where to buy real estate in Bali",
+    "Bali villa investment",
+    "Bali land for sale",
+    "foreigner property Bali",
+    "PT PMA Bali",
+    "Bali Airbnb investment ROI",
+    "leasehold freehold Bali",
+  ],
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: "/favicon.svg",
   },
   openGraph: {
-    title: "EQUITY BALI — Strategic Real Estate Investment in Bali",
+    title: "Equity Bali — Where to Buy Real Estate in Bali",
     description:
-      "Data-driven Bali property investment. Portfolios built on 37,000+ Airbnb listings analysis. ROI from 12%",
+      "Data-driven Bali property investment. Villas and land with net yield from 12%, in-house management and PT PMA legal structuring. Portfolios built on 37,000+ Airbnb listings.",
     type: "website",
+    locale: "en_US",
+    siteName: "Equity Bali",
+    url: SITE_URL,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Equity Bali — Where to Buy Real Estate in Bali",
+    description:
+      "Data-driven Bali property investment with net yield from 12%, in-house management and legal structuring for foreigners.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
   },
 };
 
