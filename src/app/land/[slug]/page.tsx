@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getAllPlots, getPlotBySlug, getSimilarPlots } from "@/lib/land";
 import { SITE_URL } from "@/lib/constants";
+import { organizationSchema } from "@/lib/seo";
 import { formatAres, formatCurrency } from "@/lib/utils";
 import { REGION_LABELS } from "@/lib/landConstants";
 import { Badge } from "@/components/ui/Badge";
@@ -48,9 +49,9 @@ export default async function LandDetailPage({ params }: PageProps) {
   const similar = getSimilarPlots(plot);
   const sold = plot.status === "sold";
 
-  const jsonLd = {
-    "@context": "https://schema.org",
+  const listing = {
     "@type": "RealEstateListing",
+    "@id": `${SITE_URL}/land/${plot.slug}#listing`,
     name: plot.title,
     url: `${SITE_URL}/land/${plot.slug}`,
     image: plot.images.map((image) =>
@@ -58,22 +59,55 @@ export default async function LandDetailPage({ params }: PageProps) {
     ),
     description: plot.description,
     datePosted: plot.publishedAt,
+    broker: { "@id": `${SITE_URL}/#organization` },
+    floorSize: {
+      "@type": "QuantitativeValue",
+      value: plot.sqm,
+      unitCode: "MTK",
+      unitText: "m²",
+    },
     offers: {
       "@type": "Offer",
       price: plot.priceUSD,
       priceCurrency: "USD",
+      seller: { "@id": `${SITE_URL}/#organization` },
       availability: sold
         ? "https://schema.org/SoldOut"
         : "https://schema.org/InStock",
     },
     spatialCoverage: {
       "@type": "Place",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: plot.area,
+        addressRegion: "Bali",
+        addressCountry: "ID",
+      },
       geo: {
         "@type": "GeoCoordinates",
         latitude: plot.coordinates.lat,
         longitude: plot.coordinates.lng,
       },
     },
+  };
+
+  const breadcrumb = {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: "Land", item: `${SITE_URL}/land` },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: plot.title,
+        item: `${SITE_URL}/land/${plot.slug}`,
+      },
+    ],
+  };
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [organizationSchema(), listing, breadcrumb],
   };
 
   return (
